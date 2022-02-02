@@ -1,8 +1,8 @@
 # DvtWeather
 screenshots
 <img src="screenshots/home.jpg" width="200">
-![](screenshots/home.jpg | width=100)
-![](screenshots/navigation_drawer.jpg)
-![](screenshots/favorite.jpg)
-![](screenshots/map.jpg)
+<img src="screenshots/home.jpg" width="200">
+<img src="screenshots/navigation_drawer.jpg" width="200">
+<img src="screenshots/favorite.jpg" width="200">
+<img src="screenshots/map.jpg" width="200">
 
