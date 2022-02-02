@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="ghost_color">#f8f8ff</color>
+    <color name="black_app">#1d1c06</color>
+    <color name="black_app_transparent">#7f1d1c06</color>
+
+    <color name="sunny_color">#47AB2F</color>
+    <color name="cloudy_color">#54717A</color>
+    <color name="rainy_color">#57575D</color>
+
+    <color name="embers_color_one">#41436A</color>
+    <color name="embers_color_two">#984063</color>
+    <color name="embers_color_three">#F64668</color>
+    <color name="embers_color_four">#FE9677</color>
+    <color name="white_transulent">#CCFFFFFF</color>
+</resources>

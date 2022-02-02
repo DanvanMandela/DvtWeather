@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@+id/fragment_splash">
+
+    <!--Global Directions-->
+    <action
+        android:id="@+id/action_weather_Fragment"
+        app:destination="@+id/fragment_weather"
+        app:enterAnim="@anim/anim_slide_in_right"
+        app:exitAnim="@anim/anim_slide_out_right"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/anim_slide_in_right"
+        app:popExitAnim="@anim/anim_slide_out_right"
+        app:popUpTo="@+id/main_navigation_graph"
+        app:popUpToInclusive="true" />
+
+
+    <action
+        android:id="@+id/action_favourite_Fragment"
+        app:destination="@+id/fragment_favourite"
+        app:enterAnim="@anim/anim_slide_in_right"
+        app:exitAnim="@anim/anim_slide_out_right"
+        app:launchSingleTop="true"
+        app:popEnterAnim="@anim/anim_slide_in_right"
+        app:popExitAnim="@anim/anim_slide_out_right"
+        app:popUpToInclusive="true" />
+    <!--End-->
+
+    <!--    Fragments -->
+    <fragment
+        android:id="@+id/fragment_weather"
+        android:name="com.example.dvtweather.view.fragment.weather.WeatherFragment"
+        tools:layout="@layout/fragment_weather" />
+
+    <fragment
+        android:id="@+id/fragment_favourite"
+        android:name="com.example.dvtweather.view.fragment.favourite.FavouriteFragment"
+        tools:layout="@layout/fragment_favourite">
+        <action
+            android:id="@+id/action_maps_dialog"
+            app:destination="@id/dialog_maps" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_splash"
+        android:name="com.example.dvtweather.view.fragment.splash.SplashFragment"
+        tools:layout="@layout/fragment_splash" />
+
+    <!--End-->
+    <dialog
+        android:id="@+id/dialog_maps"
+        android:name="com.example.dvtweather.view.activity.MapsFragment"
+        tools:layout="@layout/fragment_maps" />
+
+    <!--    Dialog -->
+
+    <!--End-->
+</navigation>

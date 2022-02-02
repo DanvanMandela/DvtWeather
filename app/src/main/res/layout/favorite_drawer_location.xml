@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/currentItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/embers_color_one"
+    android:baselineAligned="false"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:gravity="center|end"
+        android:orientation="vertical"
+        android:padding="@dimen/dimens_10dp">
+
+        <TextView
+            android:id="@+id/currentLocation"
+            android:layout_width="wrap_content"
+            android:drawablePadding="5dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            android:textColor="@color/white"
+            tools:text="Embakasi"
+            app:drawableStartCompat="@drawable/ic_baseline_location_small" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:gravity="center|end"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimens_10dp">
+
+        <com.example.dvtweather.util.AspectRatioImageView
+            android:id="@+id/locationIcon"
+            tools:src="@drawable/partlysunny"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimens_30dp" />
+
+        <TextView
+            android:id="@+id/locationTemp"
+            android:layout_marginHorizontal="@dimen/dimens_2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            tools:text="18\u00B0"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

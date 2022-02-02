@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".view.fragment.weather.WeatherFragment">
+
+    <LinearLayout
+        android:id="@+id/mainLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <include layout="@layout/weather_header" />
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                app:menu="@menu/weather_menu"
+                app:navigationIcon="@drawable/ic_baseline_menu_24"
+                app:navigationIconTint="@color/white" />
+        </RelativeLayout>
+
+        <include layout="@layout/weather_content" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/noData"
+        layout="@layout/no_data_layout"
+        android:visibility="gone" />
+
+
+</FrameLayout>
