@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="open_weather_key" templateMergeStrategy="preserve" translatable="false">ADD API KEY</string>
+    <string name="open_weather_key" templateMergeStrategy="preserve" translatable="false">312a15bef8cd7e59e64b6f00003ab044</string>
 </resources>
